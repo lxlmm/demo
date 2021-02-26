@@ -9,8 +9,6 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(scanBasePackages = "com.lxl")
-@ComponentScan(basePackages = {"com.lxl"})
-@EnableAutoConfiguration
 @ServletComponentScan("com.lxl.service")
 @MapperScan({"com.lxl.mapper","com.baomidou.mybatisplus.core.mapper"})
 public class OsgiProjectApplication {
